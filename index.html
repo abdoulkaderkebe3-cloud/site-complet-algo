@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Algorithme — Cours & Exercices</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="site-bg">
+<nav class="navbar navbar-expand-lg navbar-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Algorithme</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="nav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#cours">Cours</a></li>
+        <li class="nav-item"><a class="nav-link" href="#exercices">Exercices</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        <li class="nav-item"><a class="nav-link" href="fiche.html">Fiche</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<header class="site-hero">
+  <div class="container">
+    <div class="d-flex flex-column flex-md-row align-items-center gap-3">
+      <div>
+        <h1 class="display-6 fw-bold">Algorithme — Cours & Exercices</h1>
+        <p class="lead">Exemples interactifs — clique sur "Exécuter" pour lancer la solution.</p>
+        <div class="mt-3">
+          <a href="#exercices" class="btn btn-exec me-2"><i class="bi bi-play-fill me-1"></i>Commencer</a>
+          <a href="fiche.html" class="btn btn-outline-light">Fiche imprimable</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="container mb-5 content-overlay">
+  <section id="cours" class="mb-5">
+    <h2>Questions du cours</h2>
+    <div class="accordion" id="faq">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="q1">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#c1" aria-expanded="true" aria-controls="c1">
+            1. Donner la définition d’un algorithme
+          </button>
+        </h2>
+        <div id="c1" class="accordion-collapse collapse show" aria-labelledby="q1" data-bs-parent="#faq">
+          <div class="accordion-body">Une suite finie et ordonnée d'instructions permettant de résoudre un problème ou d'obtenir un résultat à partir de données d'entrée.</div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="q2">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c2" aria-expanded="false" aria-controls="c2">
+            2. Donner la composition d’un algorithme
+          </button>
+        </h2>
+        <div id="c2" class="accordion-collapse collapse" aria-labelledby="q2" data-bs-parent="#faq">
+          <div class="accordion-body">Entrées, traitements (opérations, conditions, boucles), sorties ; éventuellement sous-programmes et variables.</div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="q3">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c3" aria-expanded="false" aria-controls="c3">
+            3. Donner la définition d’une variable
+          </button>
+        </h2>
+        <div id="c3" class="accordion-collapse collapse" aria-labelledby="q3" data-bs-parent="#faq">
+          <div class="accordion-body">Un nom symbolique associé à un espace mémoire pouvant contenir une valeur modifiable pendant l'exécution.</div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="q4">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c4" aria-expanded="false" aria-controls="c4">
+            4. Donner les quatre éléments caractérisant une variable
+          </button>
+        </h2>
+        <div id="c4" class="accordion-collapse collapse" aria-labelledby="q4" data-bs-parent="#faq">
+          <div class="accordion-body"><strong>Nom</strong>, <strong>Type</strong>, <strong>Valeur</strong>, <strong>Portée</strong>.</div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="q5">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c5" aria-expanded="false" aria-controls="c5">
+        5. Comment déclare-t-on une variable ?
+        </button>
+        </h2>
+        <div id="c5" class="accordion-collapse collapse" aria-labelledby="q5" data-bs-parent="#faq">
+        <div class="accordion-body">Exemple kader : <code>ENTIER </code> ou <code>REEL </code> </div>
+        </div>
+    </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="q6">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c6" aria-expanded="false" aria-controls="c6">
+            6. Donner les types de variables utilisés en algorithmique
+          </button>
+        </h2>
+        <div id="c6" class="accordion-collapse collapse" aria-labelledby="q6" data-bs-parent="#faq">
+          <div class="accordion-body">Entier, Réel, Caractère, Chaîne, Booléen, Tableau (et enregistrements si nécessaire).</div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="q7">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c7" aria-expanded="false" aria-controls="c7">
+            7. Lors de la déclaration d’une variable, cette dernière possède-t-elle une valeur ?
+          </button>
+        </h2>
+        <div id="c7" class="accordion-collapse collapse" aria-labelledby="q7" data-bs-parent="#faq">
+          <div class="accordion-body">Non, pas forcément — elle est indéterminée tant qu'on ne l'initialise pas explicitement.</div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="q8">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c8" aria-expanded="false" aria-controls="c8">
+            8. Que permet de faire une instruction d’affectation ?
+          </button>
+        </h2>
+        <div id="c8" class="accordion-collapse collapse" aria-labelledby="q8" data-bs-parent="#faq">
+          <div class="accordion-body">Elle assigne une valeur à une variable (ex. <code>a ← b + 2</code>), remplace/met à jour la valeur stockée.</div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="q9">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c9" aria-expanded="false" aria-controls="c9">
+            9. Que font les instructions de lecture et d’écriture ? Donner un exemple pour chacun
+          </button>
+        </h2>
+        <div id="c9" class="accordion-collapse collapse" aria-labelledby="q9" data-bs-parent="#faq">
+          <div class="accordion-body"><strong>LIRE x</strong> : prend une valeur depuis l'entrée et la stocke dans <code>x</code>. <strong>ÉCRIRE x</strong> : affiche la valeur de <code>x</code>.<br>Ex. : <code>LIRE a</code> → <code>ÉCRIRE 'La valeur est', a</code></div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="q10">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c10" aria-expanded="false" aria-controls="c10">
+            10. Le nom d’une variable doit respecter certaines normes, lesquelles ?
+          </button>
+        </h2>
+        <div id="c10" class="accordion-collapse collapse" aria-labelledby="q10" data-bs-parent="#faq">
+          <div class="accordion-body">Commencer par une lettre, pas d'espaces, pas de caractères spéciaux (sauf <code>_</code>), éviter mots réservés, être explicite, ne pas commencer par un chiffre.</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="exercices">
+    <h2>Exercices interactifs</h2>
+    <p class="text-muted mb-2">Clique sur <strong>Exécuter</strong> pour lancer la solution.</p>
+    <div class="d-flex align-items-start mb-3">
+    </div>
+    <div id="exercisesList" class="row">
+    </div>
+  </section>
+
+  <section id="contact" class="mt-5">
+    <h2>Contact</h2>
+    <p>Besoin d'autres exercices ou d'une version dynamique ? Contacte‑moi. le kader 0575023392</p>
+  </section>
+</main>
+
+<footer class="footer py-3">
+  <div class="container text-center">© 2025 - Club des développeurs - UPB</div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" defer></script>
+<script src="scripts.js"></script>
+</body>
+</html>

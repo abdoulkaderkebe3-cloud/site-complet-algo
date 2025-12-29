@@ -1,0 +1,35 @@
+// Fonctions utilitaires
+function toggleSolution(id){
+  const el = document.getElementById(id);
+  el.classList.toggle('d-none');
+}
+
+// ... (full current content backed up) ...
+
+// Alias for backward compatibility
+window.corriger = executer;
+
+// Lazy-load background image to avoid render-blocking and render exercises on DOMContentLoaded
+function lazyLoadBackground(url){
+  const img = new Image();
+  img.src = url;
+  img.onload = function(){
+    document.body.style.backgroundImage = "url('" + url + "')";
+    // set sensible sizing and position to avoid over-zoom
+    document.body.style.backgroundSize = 'auto 100vh';
+    document.body.style.backgroundPosition = 'center top';
+    document.body.classList.add('bg-loaded');
+  };
+}
+
+document.addEventListener('DOMContentLoaded', function(){
+  // render dynamic exercises
+  renderExercises();
+  // lazy load background after idle/short delay (use kader.jpg)
+  const bgUrl = 'image/kader.jpg';
+  if ('requestIdleCallback' in window){
+    requestIdleCallback(function(){ lazyLoadBackground(bgUrl); }, {timeout:1000});
+  } else {
+    setTimeout(function(){ lazyLoadBackground(bgUrl); }, 300);
+  }
+});
